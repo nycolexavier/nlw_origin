@@ -1,241 +1,63 @@
-/************* RESET *************************/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7fhrp7');
+  src:  url('fonts/icomoon.eot?7fhrp7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7fhrp7') format('truetype'),
+    url('fonts/icomoon.woff?7fhrp7') format('woff'),
+    url('fonts/icomoon.svg?7fhrp7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
-ul {
-    list-style: none;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-    text-decoration: none;
+.icon-phone:before {
+  content: "\e900";
 }
-
-img {
-    width: 100%;
-    height: auto;
+.icon-cosmetic:before {
+  content: "\e901";
 }
-
-/********* V **************************/
-/*====  VARIABLES ============================ */
-:root {
-    --header-height: 4.5rem;
-  
-    /* colors */
-    --hue: 159;
-    /* HSL color mode */
-    --base-color: hsl(var(--hue) 36% 57%);
-    --base-color-second: hsl(var(--hue) 65% 88%);
-    --base-color-alt: hsl(var(--hue) 57% 53%);
-    --title-color: hsl(var(--hue) 41% 10%);
-    --text-color: hsl(0 0% 46%);
-    --text-color-light: hsl(0 0% 98%);
-    --body-color: hsl(0 0% 98%);
-  }
-
-/************* BASE *************************/
-body {
-    font: 400 1rem 'DM Sans', sans-serif;
-    color: var(--text-color);
-    background: var(--body-color);
-    -webkit-font-smoothing: antialiased;
+.icon-facebook:before {
+  content: "\e902";
 }
-
-.title {
-    font: 700 1.875rem 'Poppins', sans-serif;
-    color: var(--title-color);
-    -webkit-font-smoothing: auto;
+.icon-instagram:before {
+  content: "\e903";
 }
-
-.button {
-    background-color: var(--base-color);
-    color: var(--text-color-light);
-    height: 3.5rem;
-    display: inline-flex;
-    align-items: center;
-    padding: 0 2rem;
-    border-radius: 0.25rem;
-    font: 500 1rem "Dm Sans", sans-serif;
-    transition: background 0.3s;
+.icon-mail:before {
+  content: "\e904";
 }
-
-.button:hover {
-    background: var(--base-color-alt);
+.icon-map-pin:before {
+  content: "\e905";
 }
-
-
-.divider-1 {
-    height: 1px;
-    background: linear-gradient(
-        270deg,
-        hsla(var(--hue), 36%, 57%, 1) 0%,
-        hsla(var(--hue), 65%, 88%, 0.34) 100%
-    );
+.icon-menu:before {
+  content: "\e906";
 }
-
-/************* LAYOUT *************************/
-.container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+.icon-trim:before {
+  content: "\e907";
 }
-
-.grid{
-    display: grid;
-    gap: 2rem;
+.icon-whatsapp:before {
+  content: "\e908";
 }
-
-.section{
-    padding: 5rem 0;
+.icon-woman-hair:before {
+  content: "\e909";
 }
-
-#header {
-    border-bottom: 1px solid #E4E4E4;
-    margin-bottom: 2rem;
-    display: flex;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background-color: var(--body-color);
-    width: 100%;
+.icon-youtube:before {
+  content: "\e90a";
 }
-
-main {
-    margin-top: calc(var(--header-height) + 2rem );
-}
-
-/************* LOGO *************************/
-.logo {
-    font: 700 1.31rem 'Poppins', sans-serif;
-    color: var(--title-color);
-}
-
-.logo span {
-    color: var(--base-color);
-}
-
-
-/************* NAVIGATION *************************/
-nav {
-    height: var(--header-height);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-
-nav ul li {
-    text-align: center;
-
-}
-
-nav ul li a {
-    transition: color 0.2;
-    position: relative;
-}
-
-nav ul li a:hover {
-    color: var(--base-color);
-}
-
-nav ul li a::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: var(--base-color);
-
-
-    position: absolute;
-    left: 0;
-    bottom: -1.5rem;
-    
-    transition: width 0.2s;
-}
-
-nav ul li a:hover::after{
-    width: 100%;
-}
-
-
-nav .menu {
-    opacity: 0;
-    visibility: hidden;
-}
-
-/* Mostrar menu */
-
-nav.show .menu {
-    opacity: 1;
-    visibility: visible;
-
-    background: var(--body-color);
-
-    height: 100vh;
-    width: 100vw;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-nav.show .menu {
-    display: grid;
-    place-content: center;
-}
-
-nav.show ul.grid {
-    gap: 4rem;
-}
-
-/************* HOME *************************/
-#home {
-    overflow: hidden;
-}
-
-#home .container{
-    margin: 0;
-}
-
-#home .image {
-    position: relative;
-}
-
-#home .image::before {
-    content: '';
-    height: 100%;
-    width: 100%;
-    background: var(--base-color-second);
-    position: absolute;
-    top:-16.8%;
-    left: 16.7%;
-    z-index: 0;
-}
-
-#home .image img {
-    position: relative;
-    right: 2.93rem;
-}
-
-#home .image img,
-#home .image::before {
-    border-radius: 0.25rem;
-}
-
-
-#home .text {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    text-align: center;
-}
-
-#home .text h1 {
-    margin-bottom: 1rem;
-}
-
-#home .text p {
-    margin-bottom: 2rem;
+.icon-close:before {
+  content: "\e90b";
 }
