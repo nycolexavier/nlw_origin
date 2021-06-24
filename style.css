@@ -415,3 +415,13 @@ nav.show div.icon-close {
     clip-path: circle();
     margin-right: .5rem;
 }
+
+/*Swiper*/
+.swiper-slide {
+    height: auto;
+    padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--base-color);
+}

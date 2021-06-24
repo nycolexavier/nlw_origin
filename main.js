@@ -34,3 +34,12 @@ window.addEventListener("scroll", function() {
 })
 
 //Testimols carrosel
+
+const swiper = new Swiper('.swiper-container',{
+    sliderPerView: 1,
+    pagination: {
+        el: '.swiper-pagination'
+    },
+    mousewheel: true,
+    keyboard: true,
+});
