@@ -9,7 +9,7 @@
     <title>OriginSix</title>
 
     <!-- Icones -->
-    <link rel="stylesheet" href="assets/fonts/style.css"/>
+    <link rel="stylesheet" href="assets/fonts/style.css" />
 
 
     <!-- STYLES -->
@@ -20,6 +20,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap"
         rel="stylesheet">
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -29,7 +33,7 @@
             <a class="logo" href='#'>beauty<span>salon</span>.</a>
             <!--Menu-->
             <div class="menu">
-                <ul class="grid" >
+                <ul class="grid">
                     <li><a class="title" href="#home">Início</a></li>
                     <li><a class="title" href="#about">Sobre</a></li>
                     <li><a class="title" href="#services">Serviços</a></li>
@@ -52,7 +56,7 @@
                         alt="uma mulher sorrindo em um salão fazendo o cabelo de outra mulher" />
                 </div>
                 <div class="text">
-                    <h2 class="title" >Saúde natural para os seus cabelos</h2>
+                    <h2 class="title">Saúde natural para os seus cabelos</h2>
                     <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
                     <a class="button" href="#">Agendar um horário</a>
                 </div>
@@ -65,22 +69,27 @@
         <section class="section" id="about">
             <div class="container grid">
                 <div class="image">
-                    <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" 
-                    alt="3 mulheres sorrindo"
-                    />
+                    <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+                        alt="3 mulheres sorrindo" />
                 </div>
                 <div class="text">
                     <h2 class="title">Sobre nós</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quis mollitia corrupti, ipsam laborum rem architecto minus nulla. Sequi, aut blanditiis nesciunt sint magnam velit in sapiente quos a neque!
-                    </p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quis mollitia corrupti, ipsam
+                        laborum rem architecto minus nulla. Sequi, aut blanditiis nesciunt sint magnam velit in sapiente
+                        quos a neque!
+                    </p>
                     <br>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet reprehenderit, architecto maxime a, excepturi modi officiis eos aperiam doloremque similique minima, quo id. Atque quibusdam dicta, sequi ipsum sunt at?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet reprehenderit, architecto maxime
+                        a, excepturi modi officiis eos aperiam doloremque similique minima, quo id. Atque quibusdam
+                        dicta, sequi ipsum sunt at?
                     <p>
-                    <br>
+                        <br>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam natus ullam vero facere temporibus ad doloribus nesciunt aliquid nobis repellat eos, perspiciatis nulla, unde ipsa quae excepturi sed assumenda. Repudiandae.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam natus ullam vero facere
+                        temporibus ad doloribus nesciunt aliquid nobis repellat eos, perspiciatis nulla, unde ipsa quae
+                        excepturi sed assumenda. Repudiandae.
                     </p>
                 </div>
             </div>
@@ -94,23 +103,31 @@
             <div class="container grid">
                 <header>
                     <div class="title">Serviços</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <strong>minus</strong>  mollitia enim doloribus laborum exercitationem nostrum quod ipsum. Illo, repellat! Sed, omnis reprehenderit. Laboriosam eaque alias vero, harum nihil ducimus.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <strong>minus</strong> mollitia enim
+                        doloribus laborum exercitationem nostrum quod ipsum. Illo, repellat! Sed, omnis reprehenderit.
+                        Laboriosam eaque alias vero, harum nihil ducimus.</p>
                 </header>
                 <div class="cards grid">
                     <div class="card">
                         <i class="icon-woman-hair"></i>
                         <h3 class="title">Terapia Capilar</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, vero illum, autem itaque quod ullam unde qui nihil culpa at quas a eum. Unde ipsa porro architecto harum, eaque totam.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, vero illum, autem itaque
+                            quod ullam unde qui nihil culpa at quas a eum. Unde ipsa porro architecto harum, eaque
+                            totam.</p>
                     </div>
                     <div class="card">
                         <i class="icon-trim"></i>
                         <h3 class="title">Cortes</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde consectetur possimus aperiam ipsum exercitationem maiores distinctio laudantium vitae illum nemo tempore quod, facilis deleniti saepe sunt, ab fugiat. Velit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde consectetur
+                            possimus aperiam ipsum exercitationem maiores distinctio laudantium vitae illum nemo tempore
+                            quod, facilis deleniti saepe sunt, ab fugiat. Velit.</p>
                     </div>
                     <div class="card">
                         <i class="icon-cosmetic"></i>
-                        <h3 class="title" >tratamentos</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam mollitia natus quae ex dolorum laborum pariatur illum provident odit nisi id delectus libero nulla, placeat laudantium obcaecati. Error, eum provident.</p>
+                        <h3 class="title">tratamentos</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam mollitia natus quae ex
+                            dolorum laborum pariatur illum provident odit nisi id delectus libero nulla, placeat
+                            laudantium obcaecati. Error, eum provident.</p>
                     </div>
                 </div>
             </div>
@@ -124,49 +141,59 @@
                 <header>
                     <h2 class="title">Depoimentos de quem já passou por aqui</h2>
                 </header>
-                <div class="testimonials">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos quam, optio iste quia quae sunt nihil quibusdam porro eaque sequi ex id! Hic necessitatibus fuga nemo non cumque eos!
-                            </p>
-                            <cite>
-                                <img src="assets/fotos/10.jpeg" alt="Foto de Wanessa Souza">
-                                Wanessa Souza
-                            </cite>
-                        </blockquote>
+                <div class="testimonials swiper-container">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos quam, optio iste
+                                    quia quae sunt nihil quibusdam porro eaque sequi ex id! Hic necessitatibus fuga nemo
+                                    non cumque eos!
+                                </p>
+                                <cite>
+                                    <img src="assets/fotos/10.jpeg" alt="Foto de Wanessa Souza">
+                                    Wanessa Souza
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos quam, optio iste
+                                    quia quae sunt nihil quibusdam porro eaque sequi ex id! Hic necessitatibus fuga nemo
+                                    non cumque eos!
+                                </p>
+                                <cite>
+                                    <img src="assets/fotos/56.jpeg" alt="foto de franciele Venega" />
+                                    Franciele Venega
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos quam, optio iste
+                                    quia quae sunt nihil quibusdam porro eaque sequi ex id! Hic necessitatibus fuga nemo
+                                    non cumque eos!
+                                </p>
+                                <cite>
+                                    <img src="assets/fotos/26.jpeg" alt="Fotos de Valeska Fabris" />
+                                    Valeska Fabris
+                                </cite>
+                            </blockquote>
+                        </div>
+
                     </div>
 
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos quam, optio iste quia quae sunt nihil quibusdam porro eaque sequi ex id! Hic necessitatibus fuga nemo non cumque eos!
-                            </p>
-                            <cite>
-                                <img 
-                                src="assets/fotos/56.jpeg" alt="foto de franciele Venega"/>
-                                Franciele Venega
-                            </cite>
-                        </blockquote>
-                    </div>
-
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos quam, optio iste quia quae sunt nihil quibusdam porro eaque sequi ex id! Hic necessitatibus fuga nemo non cumque eos!
-                            </p>
-                            <cite>
-                                <img 
-                                src="assets/fotos/26.jpeg" alt="Fotos de Valeska Fabris"/>
-                                Valeska Fabris
-                            </cite>
-                        </blockquote>
-                    </div>
-
-
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -175,6 +202,10 @@
         <!--------CONTACT----------------->
 
     </main>
+
+    <!--Swiper-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
 
     <script src="main.js"></script>
 
