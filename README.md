@@ -1,4 +1,4 @@
-![banner-desafios](https://user-images.githubusercontent.com/74930052/126198768-36ed96e2-3dfd-490b-ba7f-39267c635c42.png)
+![nlw](https://user-images.githubusercontent.com/74930052/126733287-0c348099-fadb-4541-9322-8741e2841c8b.png)
 ---
 <img src="https://img.shields.io/static/v1?label=Status&message=incomplete&color=ff0000&style=for-the-badge&logo=ghost"/>
  
