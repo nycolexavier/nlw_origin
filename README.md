@@ -17,9 +17,11 @@ Nesse repositório guardo todas as anotações, materiais e as resoluções do s
 
 ### Features
 
-- [ ] Desafio 01
-- [ ] Desafio 02
-- [ ] Desafio 03
+- [X] Desafio 01
+- [X] Desafio 02
+- [X] Desafio 03
+- [X] Desafio 04
+- [ ] Desafio 05
 
 ### Tecnologias
 
