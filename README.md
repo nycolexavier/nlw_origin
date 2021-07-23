@@ -2,7 +2,7 @@
 ---
 <img src="https://img.shields.io/static/v1?label=Status&message=incomplete&color=ff0000&style=for-the-badge&logo=ghost"/>
  
-<p align="center">A trilha está disponível por tempo indeterminado na plataforma RockSeat: <a href="https://app.rocketseat.com.br/discover" > Aqui </a> </p>
+<p align="center">A trilha está disponível por tempo indeterminado na plataforma RocketSeat: <a href="https://app.rocketseat.com.br/discover" > Aqui </a> </p>
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
