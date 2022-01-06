@@ -369,7 +369,7 @@
   }
   
   /*====  TESTIMONIALS ============================ */
-  #testimonials {
+  /* #testimonials {
     background: white;
   }
   
@@ -433,7 +433,7 @@
   .swiper-pagination-bullet-active {
     background: var(--base-color);
   }
-  
+   */
   /*====  CONTACT ============================ */
   #contact .grid {
     gap: 4rem;
